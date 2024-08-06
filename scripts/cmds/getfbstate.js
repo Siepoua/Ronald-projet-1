@@ -28,7 +28,7 @@ module.exports = {
 			success: "Đã gửi fbstate đến bạn, vui lòng kiểm tra tin nhắn riêng của bot"
 		},
 		en: {
-			success: "Sent fbstate to you, please check bot's private message"
+			success: "𝙑𝙤𝙪𝙨 𝙖 𝙚𝙣𝙫𝙤𝙮é 𝙛𝙗𝙨𝙩𝙖𝙩𝙚, 𝙫𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙫é𝙧𝙞𝙛𝙞𝙚𝙧 𝙡𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙥𝙧𝙞𝙫é 𝙙𝙪 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚"
 		}
 	},
 
