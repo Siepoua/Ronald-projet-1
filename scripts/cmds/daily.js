@@ -39,15 +39,15 @@ module.exports = {
 			received: "Bạn đã nhận được %1 coin và %2 exp"
 		},
 		en: {
-			monday: "Monday",
-			tuesday: "Tuesday",
-			wednesday: "Wednesday",
-			thursday: "Thursday",
-			friday: "Friday",
-			saturday: "Saturday",
-			sunday: "Sunday",
-			alreadyReceived: "You have already received the gift",
-			received: "You have received %1 coin and %2 exp"
+			monday: "𝙇𝙪𝙣𝙙𝙞 👻",
+			tuesday: "𝙈𝙖𝙧𝙙𝙞 👻",
+			wednesday: "𝙈𝙚𝙧𝙘𝙧𝙚𝙙𝙞 👻",
+			thursday: "𝙅𝙚𝙪𝙙𝙞 👻",
+			friday: "𝙑𝙚𝙣𝙙𝙧𝙚𝙙𝙞 👻",
+			saturday: "𝙎𝙖𝙢𝙚𝙙𝙞 👻",
+			sunday: "𝘿𝙞𝙢𝙖𝙣𝙘𝙝𝙚 👻",
+			alreadyReceived: "𝙑𝙤𝙪𝙨 𝙖𝙫𝙚𝙯 𝙙é𝙟à 𝙧𝙚ç𝙪 𝙡𝙚 𝙘𝙖𝙙𝙚𝙖𝙪 𝘾𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻",
+			received: "𝙑𝙤𝙪𝙨 𝙖𝙫𝙚𝙯 𝙧𝙚ç𝙪 %1 𝙥𝙞è𝙘𝙚 𝙚𝙩 %2 𝙚𝙭𝙥 👻"
 		}
 	},
 
