@@ -32,8 +32,8 @@ module.exports = {
 			noImage: "Không có ảnh nào được tìm thấy trong ngày này"
 		},
 		en: {
-			invalidDate: "The date you entered is invalid, please enter again in the mm-dd format",
-			noImage: "No images were found on this day"
+			invalidDate: "𝙇𝙖 𝙙𝙖𝙩𝙚 𝙦𝙪𝙚 𝙫𝙤𝙪𝙨 𝙖𝙫𝙚𝙯 𝙨𝙖𝙞𝙨𝙞𝙚 𝙣'𝙚𝙨𝙩 𝙥𝙖𝙨 𝙫𝙖𝙡𝙞𝙙𝙚, 𝙫𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙡𝙖 𝙨𝙖𝙞𝙨𝙞𝙧 à 𝙣𝙤𝙪𝙫𝙚𝙖𝙪 𝙖𝙪 𝙛𝙤𝙧𝙢𝙖𝙩 𝙢𝙢-𝙟𝙟 👻",
+			noImage: "𝘼𝙪𝙘𝙪𝙣𝙚 𝙞𝙢𝙖𝙜𝙚 𝙣'𝙖 é𝙩é 𝙩𝙧𝙤𝙪𝙫é𝙚 𝙘𝙚 𝙟𝙤𝙪𝙧-𝙡à 👻"
 		}
 	},
 
