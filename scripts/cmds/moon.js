@@ -18,7 +18,7 @@ module.exports = {
 		role: 0,
 		description: {
 			vi: "xem ảnh mặt trăng vào đêm bạn chọn (dd/mm/yyyy)",
-			en: "view moon image on the night you choose (dd/mm/yyyy)"
+			en: "👻 𝙫𝙤𝙞𝙧 𝙡'𝙞𝙢𝙖𝙜𝙚 𝙙𝙚 𝙡𝙖 𝙡𝙪𝙣𝙚 𝙡𝙖 𝙣𝙪𝙞𝙩 𝙙𝙚 𝙫𝙤𝙩𝙧𝙚 𝙘𝙝𝙤𝙞𝙭 👻 (𝙟𝙟/𝙢𝙢/𝙖𝙖𝙖𝙖)"
 		},
 		category: "image",
 		guide: {
