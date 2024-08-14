@@ -18,7 +18,7 @@ module.exports = {
 		role: 0,
 		description: {
 			vi: "Đổi biệt danh của tất cả thành viên trong nhóm chat hoặc những thành viên được tag theo một định dạng",
-			en: "Change nickname of all members in chat or members tagged by a format"
+			en: "𝘾𝙝𝙖𝙣𝙜𝙚𝙧 𝙡𝙚 𝙥𝙨𝙚𝙪𝙙𝙤 𝙙𝙚 𝙩𝙤𝙪𝙨 𝙡𝙚𝙨 𝙢𝙚𝙢𝙗𝙧𝙚𝙨 𝙙𝙪 𝙘𝙝𝙖𝙩 𝙤𝙪 𝙙𝙚𝙨 𝙢𝙚𝙢𝙗𝙧𝙚𝙨 𝙢𝙖𝙧𝙦𝙪é𝙨 𝙥𝙖𝙧 𝙪𝙣 𝙛𝙤𝙧𝙢𝙖𝙩 𝙙𝙚 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻"
 		},
 		category: "box chat",
 		guide: {
