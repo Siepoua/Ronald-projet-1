@@ -40,9 +40,9 @@ module.exports = {
 			changedAttachment: "Đã thêm %1 tệp đính kèm vào rankup thành công"
 		},
 		en: {
-			changedMessage: "Changed rankup message to: %1",
-			missingAttachment: "You must attach an image to configure the rankup image",
-			changedAttachment: "Successfully added %1 attachment to rankup"
+			changedMessage: "𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙙𝙚 𝙘𝙡𝙖𝙨𝙨𝙚𝙢𝙚𝙣𝙩 𝙢𝙤𝙙𝙞𝙛𝙞é 𝙚𝙣 👻: %1",
+			missingAttachment: "𝙑𝙤𝙪𝙨 𝙙𝙚𝙫𝙚𝙯 𝙟𝙤𝙞𝙣𝙙𝙧𝙚 𝙪𝙣𝙚 𝙞𝙢𝙖𝙜𝙚 𝙥𝙤𝙪𝙧 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙚𝙧 𝙡'𝙞𝙢𝙖𝙜𝙚 𝙙𝙚 𝙘𝙡𝙖𝙨𝙨𝙚𝙢𝙚𝙣𝙩 𝙙𝙚 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻",
+			changedAttachment: "𝘼𝙟𝙤𝙪𝙩 𝙧é𝙪𝙨𝙨𝙞 𝙙𝙚 𝙡𝙖 𝙥𝙞è𝙘𝙚 𝙟𝙤𝙞𝙣𝙩𝙚 %1 𝙖𝙪 𝙘𝙡𝙖𝙨𝙨𝙚𝙢𝙚𝙣𝙩 𝙙𝙚 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻"
 		}
 	},
 
