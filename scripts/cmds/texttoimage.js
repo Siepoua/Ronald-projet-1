@@ -28,10 +28,10 @@ module.exports = {
 			missingGoatApiKey: "❗ Chưa cài đặt apikey cho GoatBot, vui lòng truy cập goatbot.tk để lấy apikey và cài đặt vào file configCommands.json > envGlobal.goatbotApikey và lưu lại"
 		},
 		en: {
-			syntaxError: "⚠️ Please enter prompt",
-			error: "❗ An error has occurred, please try again later:\n%1",
-			serverError: "❗ Server is overloaded, please try again later",
-			missingGoatApiKey: "❗ Not set apikey for GoatBot, please visit goatbot.tk to get apikey and set it to configCommands.json > envGlobal.goatbotApikey and save"
+			syntaxError: "⚠️ 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻: 𝙑𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙨𝙖𝙞𝙨𝙞𝙧 𝙡'𝙞𝙣𝙫𝙞𝙩𝙚",
+			error: "❗ 𝙐𝙣𝙚 𝙚𝙧𝙧𝙚𝙪𝙧 𝙨'𝙚𝙨𝙩 𝙥𝙧𝙤𝙙𝙪𝙞𝙩𝙚 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻, 𝙫𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙧é𝙚𝙨𝙨𝙖𝙮𝙚𝙧 𝙥𝙡𝙪𝙨 𝙩𝙖𝙧𝙙 👻:\n%1",
+			serverError: "❗ 𝙇𝙚 𝙨𝙚𝙧𝙫𝙚𝙪𝙧 𝙚𝙨𝙩 𝙨𝙪𝙧𝙘𝙝𝙖𝙧𝙜é, 𝙫𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙧é𝙚𝙨𝙨𝙖𝙮𝙚𝙧 𝙥𝙡𝙪𝙨 𝙩𝙖𝙧𝙙 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻",
+			missingGoatApiKey: "❗𝙑𝙤𝙪𝙨 𝙣'𝙖𝙫𝙚𝙯 𝙥𝙖𝙨 𝙙é𝙛𝙞𝙣𝙞 𝙙𝙚 𝙘𝙡é 𝘼𝙋𝙄 𝙥𝙤𝙪𝙧 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻. 𝙑𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙫𝙞𝙨𝙞𝙩𝙚𝙧 𝙜𝙤𝙖𝙩𝙗𝙤𝙩.𝙩𝙠 𝙥𝙤𝙪𝙧 𝙤𝙗𝙩𝙚𝙣𝙞𝙧 𝙡𝙖 𝙘𝙡é 𝘼𝙋𝙄 𝙚𝙩 𝙡𝙖 𝙙é𝙛𝙞𝙣𝙞𝙧 𝙨𝙪𝙧 𝙘𝙤𝙣𝙛𝙞𝙜𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨.𝙟𝙨𝙤𝙣 > 𝙚𝙣𝙫𝙂𝙡𝙤𝙗𝙖𝙡.𝙜𝙤𝙖𝙩𝙗𝙤𝙩𝘼𝙥𝙞𝙠𝙚𝙮 𝙚𝙩 𝙚𝙣𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙚𝙧 👻"
 		}
 	},
 
