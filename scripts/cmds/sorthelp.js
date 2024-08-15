@@ -21,8 +21,8 @@ module.exports = {
 			savedCategory: "Đã lưu cài đặt sắp xếp danh sách help theo thứ tự thể loại"
 		},
 		en: {
-			savedName: "Saved sort help list by name",
-			savedCategory: "Saved sort help list by category"
+			savedName: "𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚: 👻 𝙇𝙞𝙨𝙩𝙚 𝙙'𝙖𝙞𝙙𝙚 𝙖𝙪 𝙩𝙧𝙞 𝙚𝙣𝙧𝙚𝙜𝙞𝙨𝙩𝙧é𝙚 𝙥𝙖𝙧 𝙣𝙤𝙢 👻",
+			savedCategory: "𝙇𝙞𝙨𝙩𝙚 𝙙'𝙖𝙞𝙙𝙚 𝙖𝙪 𝙩𝙧𝙞 𝙚𝙣𝙧𝙚𝙜𝙞𝙨𝙩𝙧é𝙚 𝙥𝙖𝙧 𝙘𝙖𝙩é𝙜𝙤𝙧𝙞𝙚 𝙙𝙚 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻"
 		}
 	},
 
