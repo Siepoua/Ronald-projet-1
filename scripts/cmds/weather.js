@@ -48,10 +48,10 @@ module.exports = {
 			today: "Thời tiết hôm nay: %1\n%2\n🌡 Nhiệt độ thấp nhất - cao nhất %3°C - %4°C\n🌡 Nhiệt độ cảm nhận được %5°C - %6°C\n🌅 Mặt trời mọc %7\n🌄 Mặt trời lặn %8\n🌃 Mặt trăng mọc %9\n🏙️ Mặt trăng lặn %10\n🌞 Ban ngày: %11\n🌙 Ban đêm: %12"
 		},
 		en: {
-			syntaxError: "Please enter a location",
-			notFound: "Location not found: %1",
-			error: "An error has occurred: %1",
-			today: "Today's weather: %1\n%2\n🌡 Low - high temperature %3°C - %4°C\n🌡 Feels like %5°C - %6°C\n🌅 Sunrise %7\n🌄 Sunset %8\n🌃 Moonrise %9\n🏙️ Moonset %10\n🌞 Day: %11\n🌙 Night: %12"
+			syntaxError: "𝙑𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙨𝙖𝙞𝙨𝙞𝙧 𝙪𝙣 𝙡𝙞𝙚𝙪 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻",
+			notFound: "𝙀𝙢𝙥𝙡𝙖𝙘𝙚𝙢𝙚𝙣𝙩 𝙣𝙤𝙣 𝙩𝙧𝙤𝙪𝙫é 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻: %1",
+			error: "𝙐𝙣𝙚 𝙚𝙧𝙧𝙚𝙪𝙧 𝙨'𝙚𝙨𝙩 𝙥𝙧𝙤𝙙𝙪𝙞𝙩𝙚 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻: %1",
+			today: "𝙈é𝙩é𝙤 𝙙'𝙖𝙪𝙟𝙤𝙪𝙧𝙙'𝙝𝙪𝙞 👻: %1\n%2\n🌡 𝙏𝙚𝙢𝙥é𝙧𝙖𝙩𝙪𝙧𝙚 𝙗𝙖𝙨𝙨𝙚 - 𝙝𝙖𝙪𝙩𝙚 👻 %3°C - %4°C\n🌡 𝙊𝙣 𝙙𝙞𝙧𝙖𝙞𝙩 𝙦𝙪𝙚 %5°C - %6°C\n🌅 𝙇𝙚𝙫𝙚𝙧 𝙙𝙪 𝙨𝙤𝙡𝙚𝙞𝙡 %7\n🌄 𝘾𝙤𝙪𝙘𝙝𝙚𝙧 𝙙𝙚 𝙨𝙤𝙡𝙚𝙞𝙡 %8\n🌃 𝙇𝙚𝙫𝙚𝙧 𝙙𝙚 𝙡𝙪𝙣𝙚 %9\n🏙️ 𝘾𝙤𝙪𝙘𝙝𝙚𝙧 𝙙𝙚 𝙡𝙪𝙣𝙚 %10\n🌞 𝙅𝙤𝙪𝙧: %11\n🌙 𝙉𝙪𝙞𝙩: %12"
 		}
 	},
 
