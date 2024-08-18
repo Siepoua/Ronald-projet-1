@@ -69,7 +69,7 @@ module.exports = {
         }
         const userName = ret[event.senderID].name;
         const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
-        message.reply(`💬 𝘾𝙝𝙖𝙩𝙂𝙋𝙏 ☯\n━━━━━━━━━━━━━━━━\n✓ 𝘼𝙣𝙨𝙬𝙚𝙧 𝙛𝙤𝙧: ${userName}\n${response}\n━━━━━━━━━━━━━━━━\n`, messageID);
+        message.reply(`💬 𝘾𝙝𝙖𝙩𝙂𝙋𝙏 ☯\n━━━━━━━━━━━━━━━━\n🟢 ${userName}\n\n${response}\n━━━━━━━━━━━━━━━━\n`, messageID);
 api.setMessageReaction("✅", event.messageID, () => {}, true);
 
       });
