@@ -35,11 +35,11 @@ async function getAIResponse(input, userName, userId, messageID) {
 
 module.exports = {
   config: {
-    name: 'clara',
+    name: 'ai',
     author: 'Metouchela', // édit by metouchela🧑‍🦯
     role: 0,
     category: 'ai',
-    shortDescription: 'clara to ask anything',
+    shortDescription: 'ai to ask anything',
   },
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
@@ -60,8 +60,8 @@ module.exports = {
   },
   onChat: async function ({ api, event, message }) {
     const messageContent = event.body.trim().toLowerCase();
-    if (messageContent.startsWith("clara")) {
-      const input = messageContent.replace(/^clara\s*/, "").trim();
+    if (messageContent.startsWith("ai")) {
+      const input = messageContent.replace(/^ai\s*/, "").trim();
       api.getUserInfo(event.senderID, async (err, ret) => {
         if (err) {
           console.error(err);
