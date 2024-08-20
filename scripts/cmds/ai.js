@@ -1,16 +1,15 @@
 const axios = require('axios');
 
 const Prefixes = [
-  '/ai', 
+  '/clara', 
   'clara',
   'mia',
-  'ai',
   'ask',
 ];
 
 module.exports = {
   config: {
-    name: "ai",
+    name: "clara",
     version: 1.0,
     author: "OtinXSandip",
     longDescription: "AI",
