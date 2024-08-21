@@ -1,46 +1,60 @@
 const axios = require('axios');
 
-const Prefixes = [
-  '/clara', 
-  'clara',
-  'mia',
-  'ask',
-];
+async function fetchFromAI(url, params) {
+  try {
+    const response = await axios.get(url, { params });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+}
+
+async function getAIResponse(input, userId, messageID) {
+  const services = [
+     { url: 'https://metoushela-rest-api-tp5g.onrender.com/api/gpt4o?', params: { context: input } }
+  ];
+
+  let response = "𝐇𝐢 𝐡𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮, 𝐡𝐨𝐰 𝐜𝐚𝐧 𝐈 𝐡𝐞𝐥𝐩 𝐲𝐨𝐮 𝐬𝐨 𝐟𝐚𝐫 🙂";
+  let currentIndex = 0;
+
+  for (let i = 0; i < services.length; i++) {
+    const service = services[currentIndex];
+    const data = await fetchFromAI(service.url, service.params);
+    if (data && (data.gpt4 || data.reply || data.response)) {
+      response = data.gpt4 || data.reply || data.response;
+      break;
+    }
+    currentIndex = (currentIndex + 1) % services.length; // Move to the next service in the cycle
+  }
+
+  return { response, messageID };
+}
 
 module.exports = {
   config: {
-    name: "clara",
-    version: 1.0,
-    author: "OtinXSandip",
-    longDescription: "AI",
-    category: "ai",
-    guide: {
-      en: "{p} questions",
-    },
+    name: 'clara',
+    author: 'Metouchela',
+    role: 0,
+    category: 'ai',
+    shortDescription: 'ai to ask anything',
   },
-  onStart: async function () {},
-  onChat: async function ({ api, event, args, message }) {
-    try {
-      
-      const prefix = Prefixes.find((p) => event.body && event.body.toLowerCase().startsWith(p));
-      if (!prefix) {
-        return; // Invalid prefix, ignore the command
-      }
-      const prompt = event.body.substring(prefix.length).trim();
-   if (!prompt) {
-        await message.reply("💬𝘾𝙝𝙖𝙩𝙂𝙋𝙏 \n━━━━━━━━━━━━━━━━\n𝙔𝙤 𝙞'𝙢 𝙘𝙡𝙖𝙧𝙖. 𝘼 𝙫𝙞𝙧𝙩𝙪𝙖𝙡 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙬𝙝𝙖𝙩 𝙘𝙖𝙣 𝙞 𝙙𝙤 𝙛𝙤4 𝙮𝙤𝙪 ?\n━━━━━━━━━━━━━━━━");
-        return;
-      }
+  onStart: async function ({ api, event, args }) {
+    const input = args.join(' ').trim();
+    if (!input) {
+      api.sendMessage(`📑 𝙿𝚕𝚎𝚊𝚜𝚎 𝚙𝚛𝚘𝚟𝚒𝚍𝚎 a 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗 𝚘𝚛 𝚜𝚝𝚊𝚝𝚎𝚖𝚎𝚗𝚝. `, event.threadID, event.messageID);
+      return;
+    }
 
-
-      const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
-      const answer = response.data.answer;
-
- 
-    await message.reply(answer);
-
-    } catch (error) {
-      console.error("Error:", error.message);
+    const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
+    api.sendMessage(`\n¥n${response}\n\n`, event.threadID, messageID);
+  },
+  onChat: async function ({ event, message }) {
+    const messageContent = event.body.trim().toLowerCase();
+    if (messageContent.startsWith("clara")) {
+      const input = messageContent.replace(/^clara\s*/, "").trim();
+      const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
+      message.reply(`💬 𝘾𝙝𝙖𝙩𝙂𝙋𝙏\n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, messageID);
     }
   }
 };
