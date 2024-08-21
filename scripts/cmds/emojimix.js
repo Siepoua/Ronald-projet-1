@@ -1,77 +1,72 @@
 const axios = require("axios");
 
 module.exports = {
-	config: {
-		name: "emojimix",
-		version: "1.4",
-		author: "NTKhang",
-		countDown: 5,
-		role: 0,
-		description: {
-			vi: "Mix 2 emoji lại với nhau",
-			en: "Mix 2 emoji together"
-		},
-		guide: {
-			vi: "   {pn} <emoji1> <emoji2>"
-				+ "\n   Ví dụ:  {pn} 🤣 🥰",
-			en: "   {pn} <emoji1> <emoji2>"
-				+ "\n   Example:  {pn} 🤣 🥰"
-		},
-		category: "fun"
-	},
+    config: {
+        name: "emojiremix",
+        aliases: ["remix"],
+        version: "1.3",
+        author: "Hassan",
+        countDown: 5,
+        role: 0,
+        shortDescription: "Mix 3 emojis",
+        longDescription: {
+            vi: "Mix 3 emoji lại với nhau",
+            en: "Mix 3 emojis together"
+        },
+        guide: {
+            vi: "{pn} <emoji1> <emoji2> <emoji3>"
+                + "\Ví dụ: {pn} 😦 🥲 😥",
+            en: "{pn} <emoji1> <emoji2> <emoji3>"
+                + "\Example: {pn} 😦 🥲 😥"
+        },
+        category: "fun"
+    },
 
-	langs: {
-		vi: {
-			error: "Rất tiếc, emoji %1 và %2 không mix được",
-			success: "Emoji %1 và %2 mix được %3 ảnh"
-		},
-		en: {
-			error: "𝘿é𝙨𝙤𝙡é, 𝙡𝙚𝙨 𝙚𝙢𝙤𝙟𝙞 %1 𝙚𝙩 %2 𝙣𝙚 𝙥𝙚𝙪𝙫𝙚𝙣𝙩 𝙥𝙖𝙨 𝙨𝙚 𝙢é𝙡𝙖𝙣𝙜𝙚𝙧 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 👻",
-			success: "𝙀𝙢𝙤𝙟𝙞 %1 𝙚𝙩 %2 𝙢é𝙡𝙖𝙣𝙜𝙚𝙣𝙩 %3 𝙞𝙢𝙖𝙜𝙚𝙨 👻"
-		}
-	},
+    langs: {
+        vi: {
+            error: "Rất tiếc, emoji %1, %2, và %3 không thể mix được",
+            success: "Emoji %1, %2, và %3 đã được mix thành %4 ảnh"
+        },
+        en: {
+            error: "Sorry, emojis %1, %2, and %3 cannot be mixed",
+            success: "Emojis %1, %2, and %3 mixed into %4 images"
+        }
+    },
 
-	onStart: async function ({ message, args, getLang }) {
-		const readStream = [];
-		const emoji1 = args[0];
-		const emoji2 = args[1];
+    onStart: async function ({ message, args, getLang }) {
+        const readStream = [];
+        const emojis = args.slice(0, 3);
 
-		if (!emoji1 || !emoji2)
-			return message.SyntaxError();
+        if (emojis.length !== 3)
+            return message.SyntaxError();
 
-		const generate1 = await generateEmojimix(emoji1, emoji2);
-		const generate2 = await generateEmojimix(emoji2, emoji1);
+        const generate1 = await generateEmojimix(emojis[0], emojis[1]);
+        const generate2 = await generateEmojimix(emojis[1], emojis[2]);
+        const generate3 = await generateEmojimix(emojis[0], emojis[2]);
 
-		if (generate1)
-			readStream.push(generate1);
-		if (generate2)
-			readStream.push(generate2);
+        if (generate1) readStream.push(generate1);
+        if (generate2) readStream.push(generate2);
+        if (generate3) readStream.push(generate3);
 
-		if (readStream.length == 0)
-			return message.reply(getLang("error", emoji1, emoji2));
+        if (readStream.length === 0)
+            return message.reply(getLang("error", ...emojis));
 
-		message.reply({
-			body: getLang("success", emoji1, emoji2, readStream.length),
-			attachment: readStream
-		});
-	}
+        message.reply({
+            body: getLang("success", ...emojis, readStream.length),
+            attachment: readStream
+        });
+    }
 };
 
-
-
 async function generateEmojimix(emoji1, emoji2) {
-	try {
-		const { data: response } = await axios.get("https://goatbotserver.onrender.com/taoanhdep/emojimix", {
-			params: {
-				emoji1,
-				emoji2
-			},
-			responseType: "stream"
-		});
-		response.path = `emojimix${Date.now()}.png`;
-		return response;
-	}
-	catch (e) {
-		return null;
-	}
-}
+    try {
+        const { data: response } = await axios.get("https://goatbotserver.onrender.com/taoanhdep/emojimix", {
+            params: { emoji1, emoji2 },
+            responseType: "stream"
+        });
+        response.path = `emojimix${Date.now()}.png`;
+        return response;
+    } catch (e) {
+        return null;
+    }
+				  }
