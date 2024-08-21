@@ -19,12 +19,12 @@ module.exports = {
 
  async onStart({ event, api, args }) {
  if (args.length === 0) {
-     api.sendMessage("Enter the image name you want to search.", event.threadID, event.messageID);
+     api.sendMessage("𝙀𝙣𝙩𝙧𝙚𝙯 𝙡𝙚 𝙣𝙤𝙢 𝙙𝙚 𝙡'𝙞𝙢𝙖𝙜𝙚 𝙦𝙪𝙚 𝙫𝙤𝙪𝙨 𝙨𝙤𝙪𝙝𝙖𝙞𝙩𝙚𝙯 𝙧𝙚𝙘𝙝𝙚𝙧𝙘𝙝𝙚𝙧 𝙘𝙝𝙚𝙯 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚.", event.threadID, event.messageID);
      return;
  }
 
  let query = (event.type == "message_reply") ? event.messageReply.body : args.join(" ");
- api.sendMessage(`🔎 Searching for ${query}...`, event.threadID, event.messageID);
+ api.sendMessage(`🔎 𝘾𝙝𝙧𝙞𝙨𝙩𝙚𝙡𝙡𝙚 À 𝙡𝙖 𝙧𝙚𝙘𝙝𝙚𝙧𝙘𝙝𝙚 𝙙𝙚 ${query}...`, event.threadID, event.messageID);
 
  let result = await google.image(query, { safe: false });
  if (result.length === 0) {
