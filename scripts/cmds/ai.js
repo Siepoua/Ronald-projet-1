@@ -99,7 +99,7 @@ module.exports = {
 
       if (!np) {
 
-        return api.sendMessage('💬 𝗖𝗵𝗮𝘁𝗚𝗽𝘁━━━━━━━━━━━━━━━━\nQuelle est votre question ❔\n━━━━━━━━━━━━━━━━', event.threadID, event.messageID);
+        return api.sendMessage('💬 𝗖𝗵𝗮𝘁𝗚𝗽𝘁\n━━━━━━━━━━━━━━━━\nQuelle est votre question ❔\n━━━━━━━━━━━━━━━━', event.threadID, event.messageID);
 
       }
 
