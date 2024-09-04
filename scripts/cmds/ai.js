@@ -99,7 +99,7 @@ module.exports = {
 
       if (!np) {
 
-        return api.sendMessage('💬 𝗖𝗵𝗮𝘁𝗚𝗽𝘁\n━━━━━━━━━━━━━━━━\nQuelle est votre question ❔\n━━━━━━━━━━━━━━━━', event.threadID, event.messageID);
+        return api.sendMessage('💬 𝗖𝗵𝗮𝘁𝗚𝗽𝘁\n▬▬▬▬▬▬▬▬▬▬▬▬▬\nSalut que puis-je faire pour toi ❔\n▬▬▬▬▬▬▬▬▬▬▬▬▬', event.threadID, event.messageID);
 
       }
 
@@ -131,7 +131,7 @@ module.exports = {
 
             role: "user",
 
-            content: `💬 Salut je suis Clara créé par Ronald ?`
+            content: `What can i do for you `
 
           },
 
